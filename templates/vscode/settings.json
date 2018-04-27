@@ -1,77 +1,30 @@
 {
-  "diffEditor.renderIndicators": false,
-  "diffEditor.renderSideBySide": false,
-  "docker.showExplorer": false,
-  "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "SF Mono, Vazir Code",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
-  "editor.hideCursorInOverviewRuler": true,
-  "editor.lineHeight": 21,
-  "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.overviewRulerBorder": false,
-  "editor.renderIndentGuides": true,
-  "editor.renderLineHighlight": "gutter",
-  "editor.selectionHighlight": false,
-  "editor.smoothScrolling": true,
-  "editor.snippetSuggestions": "top",
+  "eslint.enable": true,
+  "eslint.trace.server": "messages",
+  "editor.detectIndentation": false,
+  "window.zoomLevel": 0,
   "editor.tabSize": 2,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.openEditors.visible": 0,
-  "extensions.autoUpdate": false,
-  "extensions.ignoreRecommendations": true,
-  "extensions.showRecommendationsOnlyOnDemand": true,
-  "files.associations": {
-    "*.note": "markdown",
-    ".env": "shellscript"
-  },
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  "git.confirmSync": false,
   "html.format.wrapAttributes": "force",
-  "javascript.implicitProjectConfig.checkJs": true,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.shell.osx": "/usr/local/bin/bash",
-  "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.titleBarStyle": "native",
-  "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "PlasticAB",
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "vs-nomo-dark",
-  "workbench.statusBar.feedback.visible": false,
-  "[markdown]": {
-    "editor.wordWrap": "on",
+  "extensions.ignoreRecommendations": false,
+  "workbench.startupEditor": "welcomePage",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#c374b2",
+    "list.activeSelectionForeground": "#df7ecb",
+    "list.inactiveSelectionForeground": "#c374b2",
+    "list.highlightForeground": "#df7ecb",
+    "scrollbarSlider.activeBackground": "#FF704250",
+    "editorSuggestWidget.highlightForeground": "#df7ecb",
+    "textLink.foreground": "#df7ecb",
+    "progressBar.background": "#df7ecb",
+    "pickerGroup.foreground": "#df7ecb",
+    "editorGutter.modifiedBackground": "#e26666",
+    "gitDecoration.modifiedResourceForeground": "#e26666",
+    "tab.activeBorder": "#df7ecb"
   },
-  // Extensions
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx",
-    "typescript": "jsx",
-    "typescriptreact": "jsx"
-  },
-  "sublimeTextKeymap.promptV3Features": true,
-  "gitlens.gitExplorer.files.layout": "auto",
-  "gitlens.gitExplorer.branches.layout": "list",
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": [
-    "gutter",
-    "overview"
-  ],
-  "gitlens.statusBar.enabled": false,
-  "gitlens.hovers.enabled": false,
+  "workbench.colorTheme": "Dracula Soft",
+  "vsicons.projectDetection.autoReload": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "explorer.confirmDragAndDrop": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -80,7 +33,22 @@
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
     "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "gitlens.keymap": "none",
+  "gitlens.codeLens.enabled": false,
+  // Extensions
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "typescript": "jsx",
+    "typescriptreact": "jsx"
   },
   "[typescript]": {
     "editor.foldingStrategy": "indentation"
