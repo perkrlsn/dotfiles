@@ -1,0 +1,78 @@
+#!/usr/bin/env ruby
+# Dependencies: tail, head, grep, cat, git, ansifilter
+# TODO
+# 1. argument to prevent sha update
+
+require 'awesome_print'
+require 'colorize'
+
+def report(type)
+  latest_sha_file = "#{Dir.home}/.homebrew-#{type}-latest-sha"
+  cask_repo = "/usr/local/Homebrew/Library/Taps/caskroom/homebrew-#{type}"
+  version_regex  = /^[+-]\s*version\s+['"]?(.+?)['"]?$/
+  homepage_regex = /^\s+homepage\s+["'](.+)["']\s*$/
+  updated = []
+  added   = []
+  removed = []
+  update_available = []
+
+  Dir.chdir cask_repo
+
+  old_sha = if File.exist?(latest_sha_file)
+              File.read(latest_sha_file).strip
+            else
+              `git log | head -20 | /usr/bin/tail -r | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
+            end
+  latest_sha = `git log | head -1 | ansifilter`.scan(/([a-z0-9]{7,})\s.+/)[0][0]
+
+  installed_casks = `brew cask ls`.split("\n")
+  changes = `git diff --name-status #{old_sha} | grep Casks/ | ansifilter`.split("\n")
+
+  apps = changes.map do |c|
+    status, path = c.split("\t")
+    app = path.scan(%r{^Casks/(.+)\.rb$})
+    { status: status, name: app[0][0] } unless app.empty?
+  end
+
+  apps.compact.each do |a|
+    if a[:status] == 'D'
+      removed << a[:name].colorize(:light_blue)
+    else
+      h = `cat Casks/#{a[:name]}.rb | grep -E '^\s+homepage'`
+      homepage = h.empty? ? '' : h.scan(homepage_regex).first.first
+      if a[:status] == 'A'
+        added << a[:name].colorize(:light_blue) + " [#{homepage.colorize(:light_green)}]"
+      elsif a[:status] == 'M'
+        version_diff = `git diff #{old_sha} Casks/#{a[:name]}.rb | grep -E '^[+-]\s+version'`
+
+        if version_diff.size > 0
+          last_version, current_version = version_diff.split("\n")
+          last_version.gsub!(version_regex, '\1') if last_version
+          current_version.gsub!(version_regex, '\1') if current_version
+        end
+
+        needs_update = version_diff.size > 0 && installed_casks.include?(a[:name])
+        update_available << "✨  #{a[:name].colorize(:green)}" if needs_update
+
+        updated << [
+          a[:name].colorize(:light_blue),
+          (needs_update ? '✨' : ''),
+          " [#{homepage.colorize(:light_green)}]",
+          (version_diff.size > 0 ? " #{last_version} #{'<'.colorize(:yellow)} #{current_version}" : '')
+        ].join('')
+      end
+    end
+  end
+
+  puts "\n🔮  #{type.upcase}".colorize(:magenta)
+  puts "#{'UPDATED'.colorize(:light_magenta)}\n#{updated.join("\n")}" unless updated.empty?
+  puts "#{'ADDED'.colorize(:light_magenta)}\n#{added.join("\n")}" unless added.empty?
+  puts "#{'REMOVED'.colorize(:light_magenta)}\n#{removed.join("\n")}" unless removed.empty?
+  puts "#{'OUTDATED'.colorize(:light_magenta)}\n#{update_available.join("\n")}" unless update_available.empty?
+  puts "Old SHA: #{old_sha}  New SHA: #{latest_sha}".colorize(:light_black)
+
+  File.open(latest_sha_file, 'w') { |file| file.write(latest_sha) }
+end
+
+report('cask')
+report('fonts')

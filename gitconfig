@@ -1,0 +1,82 @@
+[user]
+  name  = ${name}
+  email = ${email}
+[github]
+  user  = ${github_username}
+[alias]
+  co        = checkout
+  unstage   = reset HEAD
+  lg        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lol       = log --pretty=oneline --abbrev-commit --graph --decorate
+  conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
+  resolve   = !git ls-files --unmerged | cut -c51- | sort -u | xargs git add
+  unpushed  = cherry -v
+  upstream  = rev-parse --symbolic-full-name --abbrev-ref HEAD@{upstream}
+  amend     = commit --amend
+[core]
+  excludesfile = ~/.gitignore
+  editor       = subl -wn
+  whitespace   = space-before-tab, trailing-space, cr-at-eol
+  trustctime   = false
+  precomposeunicode = false
+[help]
+  autocorrect = 1
+[merge]
+  log = true
+[apply]
+  whitespace = fix
+[push]
+  default = current
+  followTags = true
+[branch]
+  autosetupmerge  = true
+  autosetuprebase = always
+  mergeoptions    = --no-ff
+[status]
+  relativePaths = true
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[color]
+  ui     = auto
+[color "branch"]
+  current = "yellow reverse"
+  local   = yellow
+  remote  = green
+[color "status"]
+  header    = white dim
+  branch    = yellow
+  added     = green
+  changed   = red
+  untracked = blue
+[color "diff"]
+  meta        = blue
+  commit      = green
+  frag        = magenta
+  old         = red
+  new         = green
+  whitespace  = "red reverse"
+[color "diff-highlight"]
+  oldNormal    = red
+  oldHighlight = "red 52"
+  newNormal    = green
+  newHighlight = "green 22"
+[difftool]
+  prompt = false
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[diff]
+  tool = Kaleidoscope
+  # Detect copies as well as renames
+  renames = copies
+  # (git 2.9+) Set this option to `true` to enable an experimental heuristic that
+  # shifts the hunk boundary in an attempt to make the resulting
+  # patch easier to read.
+  compactionHeuristic = true
+  algorithm = histogram
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[pager]
+  diff = diff-so-fancy | less --tabs=4 -RFX
+  show = diff-so-fancy | less --tabs=4 -RFX
