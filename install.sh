@@ -129,13 +129,13 @@ else
   sudo xcodebuild -license accept
 fi
 
-source "$HOME"/.templates/provisioning/mac/homebrew.sh
-source "$HOME"/.templates/provisioning/mac/mac-apps.sh
-source "$HOME"/.templates/provisioning/mac/appstore.sh
-source "$HOME"/.templates/provisioning/npm.sh
-source "$HOME"/.templates/provisioning/ruby.sh
-source "$HOME"/.templates/provisioning/vscode.sh
-source "$HOME"/.templates/provisioning/mac/macos.sh
+source provisioning/mac/homebrew.sh
+source provisioning/mac/mac-apps.sh
+source provisioning/mac/appstore.sh
+source provisioning/npm.sh
+source provisioning/ruby.sh
+source provisioning/vscode.sh
+source provisioning/mac/macos.sh
 
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
