@@ -114,8 +114,6 @@ if [ -f "$HOME/.npmrc" ]; then backup_file npmrc; fi
 rm -rf "$HOME/.npmrc"
 generate_npmrc
 
-#!/usr/bin/env bash
-
 echo "install Xcode first!"
 
 sudo -v
