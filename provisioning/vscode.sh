@@ -15,4 +15,4 @@ done
 
 echo "Installing VS-Code Extensions"
 echo "====================================="
-while read -r in; do code --install-extension "$in"; done < ../../dependencies/vscode
+while read -r in; do code --install-extension "$in"; done < ../dependencies/vscode
