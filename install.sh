@@ -45,13 +45,15 @@ for name in *; do
 done
 
 get_user_info () {
+  mkdir $user_info_dir
+  touch $user_info
   read -p "Your Git Name: " name
   read -p "Your Git Email: " email
   read -p "Your Github Username: " github_username
   read -p "Your NPM Name: " npm_name
   read -p "Your NPM Email: " npm_email
   read -p "Your NPM Username: " npm_username
-  cat >"$user_info" <<EOL
+  cat > $user_info <<EOL
 name: ${name}
 email: ${email}
 github_username: ${github_username}

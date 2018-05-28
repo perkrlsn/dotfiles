@@ -12,10 +12,10 @@ echo
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "==> Tapping extra sources"
-while read -r in; do brew tap "$in"; done < ../../dependencies/taps
+while read -r in; do brew tap "$in"; done < $HOME/.dependencies/taps
 
 echo "==> Disabling analytics"
 git config --file="$(brew --repository)/.git/config" --replace-all homebrew.analyticsdisabled true
 
 echo "==> Pouring homebrew formulas"
-while read -r in; do brew install $in; done < ../../dependencies/brew
+while read -r in; do brew install $in; done < $HOME/.dependencies/brew

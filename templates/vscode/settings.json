@@ -53,4 +53,5 @@
   "[typescript]": {
     "editor.foldingStrategy": "indentation"
   },
+  "gitlens.historyExplorer.enabled": true,
 }

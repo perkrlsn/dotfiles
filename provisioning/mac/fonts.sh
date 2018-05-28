@@ -4,4 +4,4 @@ echo "Installing Fonts"
 echo "================"
 while read -r in; do
   brew cask install --force "$in"
-done < <(grep -v -E '^$|^#' ../../dependencies/fonts)
+done < <(grep -v -E '^$|^#' "$HOME"/.dependencies/fonts)

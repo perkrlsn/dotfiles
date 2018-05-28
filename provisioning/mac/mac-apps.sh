@@ -2,4 +2,4 @@
 
 echo "Installing Apps"
 echo "==============="
-while read -r in; do brew cask install --force "$in"; done < ../../dependencies/apps
+while read -r in; do brew cask install --force "$in"; done < $HOME/.dependencies/apps
