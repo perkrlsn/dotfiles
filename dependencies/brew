@@ -1,3 +1,4 @@
+autojump
 autossh
 awscli
 bash
@@ -19,3 +20,4 @@ openssl
 trash
 tree
 wget
+zsh-autosuggestions
