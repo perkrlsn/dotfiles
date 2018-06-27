@@ -1038,9 +1038,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1605 542 796 473 -2560 0 2560 1418 </string>
+	<string>-1091 577 796 473 -1440 -577 1440 2538 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-2560 79 2560 1339 -2560 0 2560 1418 </string>
+	<string>0 79 1920 1099 0 0 1920 1178 </string>
 	<key>NeverWarnAboutShortLivedSessions_8E9E1E65-E689-45C1-A29F-24D21CDEE550</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_8E9E1E65-E689-45C1-A29F-24D21CDEE550_selection</key>
@@ -3822,6 +3822,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>~/dotfiles/templates/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>RightCommand</key>
@@ -3835,7 +3837,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-02T13:14:13Z</date>
+	<date>2018-06-04T03:37:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>

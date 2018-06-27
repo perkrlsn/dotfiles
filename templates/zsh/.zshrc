@@ -1,8 +1,6 @@
 # ZSH Initialization
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME=wedisagree
-
 plugins=(git node)
 
 source $ZSH/oh-my-zsh.sh
@@ -15,3 +13,9 @@ do
   fi
   source $f
 done
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
+
+SPACESHIP_PACKAGE_SHOW=false
