@@ -23,5 +23,15 @@
   {
     "key": "ctrl+cmd+3",
     "command": "-workbench.action.moveEditorToThirdGroup"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "extension.wrapTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-extension.wrapTag",
+    "when": "editorTextFocus"
   }
 ]

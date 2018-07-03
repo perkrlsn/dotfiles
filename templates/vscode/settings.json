@@ -54,4 +54,5 @@
     "editor.foldingStrategy": "indentation"
   },
   "gitlens.historyExplorer.enabled": true,
+  "jest.pathToConfig": "./jest-unit.config.js"
 }
