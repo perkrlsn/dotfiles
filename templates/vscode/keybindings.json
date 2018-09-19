@@ -9,14 +9,6 @@
     "command": "-workbench.action.moveEditorToFirstGroup"
   },
   {
-    "key": "alt+cmd+2",
-    "command": "workbench.action.moveEditorToSecondGroup"
-  },
-  {
-    "key": "ctrl+cmd+2",
-    "command": "-workbench.action.moveEditorToSecondGroup"
-  },
-  {
     "key": "alt+cmd+3",
     "command": "workbench.action.moveEditorToThirdGroup"
   },
@@ -33,5 +25,13 @@
     "key": "ctrl+i",
     "command": "-extension.wrapTag",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "alt+e",
+    "command": "workbench.action.moveEditorToRightGroup"
   }
 ]

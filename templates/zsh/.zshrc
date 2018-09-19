@@ -17,9 +17,30 @@ do
   source $f
 done
 
+## NVM Autorun
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" != "N/A" ] && [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version system)" ]; then
+    nvm use system
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
 ## Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
 
 ## Spaceship settings
 SPACESHIP_PACKAGE_SHOW=false
+# added by travis gem
+[ -f /Users/perkarlsson/.travis/travis.sh ] && source /Users/perkarlsson/.travis/travis.sh

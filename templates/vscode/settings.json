@@ -54,5 +54,7 @@
     "editor.foldingStrategy": "indentation"
   },
   "gitlens.historyExplorer.enabled": true,
-  "jest.pathToConfig": "./jest-unit.config.js"
+  "jest.pathToConfig": "./jest-unit.config.js",
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "breadcrumbs.enabled": true
 }
