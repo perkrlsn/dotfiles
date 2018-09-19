@@ -129,13 +129,16 @@ else
   sudo xcodebuild -license accept
 fi
 
+## Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 source provisioning/mac/homebrew.sh
 source provisioning/mac/mac-apps.sh
 source provisioning/mac/appstore.sh
 source provisioning/npm.sh
 source provisioning/ruby.sh
 source provisioning/vscode.sh
-# source provisioning/mac/macos.sh
+source provisioning/mac/macos.sh
 
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash

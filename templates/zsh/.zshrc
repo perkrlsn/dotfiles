@@ -36,11 +36,9 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-## Set Spaceship ZSH as a prompt
+# Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
 
 ## Spaceship settings
 SPACESHIP_PACKAGE_SHOW=false
-# added by travis gem
-[ -f /Users/perkarlsson/.travis/travis.sh ] && source /Users/perkarlsson/.travis/travis.sh
