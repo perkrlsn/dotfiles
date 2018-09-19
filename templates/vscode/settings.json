@@ -23,7 +23,7 @@
   },
   "workbench.colorTheme": "Dracula Soft",
   "vsicons.projectDetection.autoReload": true,
-  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.iconTheme": "vscode-icons",
   "explorer.confirmDragAndDrop": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,

@@ -2,4 +2,4 @@
 
 echo "Installing Gems"
 echo "==============="
-while read -r in; do sudo gem install "$in"; done < ../dependencies/gem
+while read -r in; do sudo gem install "$in"; done < "$HOME"/.dependencies/gem

@@ -135,7 +135,7 @@ source provisioning/mac/appstore.sh
 source provisioning/npm.sh
 source provisioning/ruby.sh
 source provisioning/vscode.sh
-source provisioning/mac/macos.sh
+# source provisioning/mac/macos.sh
 
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
