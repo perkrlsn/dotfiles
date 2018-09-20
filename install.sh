@@ -104,33 +104,41 @@ backup_file () {
   cp "$HOME/.$1" "$HOME/$backup_dir/.$1-$timestamp"
 }
 
+install_oh_my_zsh () {
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+}
+
 if [ ! -f "$user_info" ]; then get_user_info; fi
 
-echo "Creating .gitconfig"
+echo "==> Creating .gitconfig"
 if [ -f "$HOME/.gitconfig" ]; then backup_file gitconfig; fi
 rm -rf "$HOME/.gitconfig"
 generate_gitconfig
 
-echo "Creating .npmrc"
+echo "==> Creating .npmrc"
 if [ -f "$HOME/.npmrc" ]; then backup_file npmrc; fi
 rm -rf "$HOME/.npmrc"
 generate_npmrc
 
-echo "install Xcode first!"
+echo "==> Install Xcode first!"
 
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 if pkgutil --pkg-info=com.apple.pkg.CLTools_Executables > /dev/null 2>&1; then
-  echo "==> macOS Command-Line Tools are installed."
+  echo "==> macOS Command-Line Tools are already installed."
 else
   echo "==> Installing Command-Line Tools"
   xcode-select --install
   sudo xcodebuild -license accept
 fi
 
-## Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+if [ ! -f "$HOME/.oh-my-zsh"]; then
+  echo "==> Installing oh-my-zsh"
+  install_oh_my_zsh
+else
+  echo "==> oh-my-zsh is already installed"
+fi
 
 source provisioning/mac/homebrew.sh
 source provisioning/mac/mac-apps.sh
