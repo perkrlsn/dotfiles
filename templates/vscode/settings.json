@@ -56,5 +56,6 @@
   "gitlens.historyExplorer.enabled": true,
   "jest.pathToConfig": "./jest-unit.config.js",
   "java.errors.incompleteClasspath.severity": "ignore",
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "editor.formatOnSave": true
 }
