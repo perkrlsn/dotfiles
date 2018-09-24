@@ -1,5 +1,6 @@
 ## ZSH Initialization
 export ZSH=$HOME/.oh-my-zsh
+export PATH="$(python -m site --user-base)/bin:${PATH}"
 
 ## Plugins
 plugins=(git node)
