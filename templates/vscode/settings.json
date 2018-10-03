@@ -5,7 +5,7 @@
   "window.zoomLevel": 0,
   "editor.tabSize": 2,
   "html.format.wrapAttributes": "force",
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "welcomePage",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#c374b2",
@@ -21,9 +21,9 @@
     "gitDecoration.modifiedResourceForeground": "#e26666",
     "tab.activeBorder": "#df7ecb"
   },
-  "workbench.colorTheme": "Dracula Soft",
+  "workbench.colorTheme": "Dracula",
   "vsicons.projectDetection.autoReload": true,
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDragAndDrop": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -57,5 +57,15 @@
   "jest.pathToConfig": "./jest-unit.config.js",
   "java.errors.incompleteClasspath.severity": "ignore",
   "breadcrumbs.enabled": true,
-  "editor.formatOnSave": true
+  "vsicons.presets.jsOfficial": true,
+  "workbench.fontAliasing": "antialiased",
+  "editor.fontWeight": "bold",
+  "diffEditor.renderSideBySide": false,
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ]
 }
