@@ -61,11 +61,14 @@
   "workbench.fontAliasing": "antialiased",
   "editor.fontWeight": "bold",
   "diffEditor.renderSideBySide": false,
-  "github.hosts": [
+  "togglequotes.chars": ["\"", "'", "`"],
+  "githubPullRequests.hosts": [
     {
       "host": "https://github.com",
       "username": "oauth",
       "token": "system"
     }
-  ]
+  ],
+  "reactPureToClass.typescript": true,
+  "extensions.showRecommendationsOnlyOnDemand": true
 }
