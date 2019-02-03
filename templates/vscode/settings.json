@@ -7,21 +7,6 @@
   "html.format.wrapAttributes": "force",
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "welcomePage",
-  "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#c374b2",
-    "list.activeSelectionForeground": "#df7ecb",
-    "list.inactiveSelectionForeground": "#c374b2",
-    "list.highlightForeground": "#df7ecb",
-    "scrollbarSlider.activeBackground": "#FF704250",
-    "editorSuggestWidget.highlightForeground": "#df7ecb",
-    "textLink.foreground": "#df7ecb",
-    "progressBar.background": "#df7ecb",
-    "pickerGroup.foreground": "#df7ecb",
-    "editorGutter.modifiedBackground": "#e26666",
-    "gitDecoration.modifiedResourceForeground": "#e26666",
-    "tab.activeBorder": "#df7ecb"
-  },
-  "workbench.colorTheme": "Dracula",
   "vsicons.projectDetection.autoReload": true,
   "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDragAndDrop": false,
@@ -69,5 +54,8 @@
     }
   ],
   "reactPureToClass.typescript": true,
-  "extensions.showRecommendationsOnlyOnDemand": true
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "workbench.colorTheme": "Dracula",
 }
