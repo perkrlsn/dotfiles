@@ -7,6 +7,8 @@
   "html.format.wrapAttributes": "force",
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "welcomePage",
+
+  "workbench.colorTheme": "Mauve",
   "vsicons.projectDetection.autoReload": true,
   "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDragAndDrop": false,
@@ -44,18 +46,16 @@
   "vsicons.presets.jsOfficial": true,
   "workbench.fontAliasing": "antialiased",
   "editor.fontWeight": "bold",
-  "diffEditor.renderSideBySide": false,
-  "togglequotes.chars": ["\"", "'", "`"],
-  "githubPullRequests.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
+  "togglequotes.chars": [
+    "\"",
+    "'",
+    "`"
   ],
   "reactPureToClass.typescript": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "workbench.colorTheme": "Dracula",
+  "jest.pathToJest": ""
 }

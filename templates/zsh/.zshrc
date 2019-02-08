@@ -43,3 +43,5 @@ prompt spaceship
 
 ## Spaceship settings
 SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_TIME_SHOW=true
+export PATH="/usr/local/sbin:$PATH"
