@@ -9,14 +9,13 @@ DEFAULT_USER=`whoami`
 ## Theme
 ZSH_THEME="agnoster"
 
-## Startup
-
 ## Plugins
 plugins=(git node)
-source $ZSH/oh-my-zsh.sh
-
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+#Startup
+source $ZSH/oh-my-zsh.sh
 
 ## Source external settings
 for f in $HOME/icloud/.zsh/.*
