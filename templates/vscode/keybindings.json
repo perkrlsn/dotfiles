@@ -37,5 +37,9 @@
   {
     "key": "cmd+r",
     "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "shift+cmd+7",
+    "command": "-extension.displayCoverage"
   }
 ]

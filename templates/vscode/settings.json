@@ -9,7 +9,6 @@
   "workbench.startupEditor": "welcomePage",
 
   "workbench.colorTheme": "Mauve",
-  "vsicons.projectDetection.autoReload": true,
   "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDragAndDrop": false,
   "gitlens.advanced.messages": {
@@ -40,22 +39,17 @@
   "[typescript]": {
     "editor.foldingStrategy": "indentation"
   },
-  "gitlens.historyExplorer.enabled": true,
-  "java.errors.incompleteClasspath.severity": "ignore",
   "breadcrumbs.enabled": true,
-  "vsicons.presets.jsOfficial": true,
   "workbench.fontAliasing": "antialiased",
   "editor.fontWeight": "bold",
-  "togglequotes.chars": [
-    "\"",
-    "'",
-    "`"
-  ],
+  "togglequotes.chars": ["\"", "'", "`"],
   "reactPureToClass.typescript": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "workbench.editor.highlightModifiedTabs": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "jest.pathToJest": ""
+  "jest.pathToJest": "",
+  "javascript.implicitProjectConfig.checkJs": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
