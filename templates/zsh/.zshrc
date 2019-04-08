@@ -49,9 +49,9 @@ load-nvmrc
 
 ## Prompt setup
 autoload -U promptinit; promptinit
-autoload -U colors; colors
 prompt pure
-RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
+
+RPROMPT='%{$fg[yellow]%}$ZSH_KUBECTL_PROMPT%{$reset_color%}'
 
 
 ## Agnoster overrides
