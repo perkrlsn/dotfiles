@@ -7,11 +7,13 @@ export LANG="en_GB"
 DEFAULT_USER=`whoami` 
 
 ## Theme
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
 
 ## Plugins
-plugins=(git node)
+plugins=(git node )
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 #Startup
@@ -46,20 +48,27 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 ## Prompt setup
-prompt_dir() {
-	prompt_segment blue $CURRENT_FG $(basename `pwd`)
-}
+autoload -U promptinit; promptinit
+autoload -U colors; colors
+prompt pure
+RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
-prompt_kubecontext() {
-	prompt_segment red $CURRENT_FG "⎈ `kubectl config current-context`"
-}
 
-build_prompt() {
-	prompt_status
-	prompt_context
-	prompt_virtualenv
-	prompt_dir
-	prompt_git
-	prompt_kubecontext
-	prompt_end
-}
+## Agnoster overrides
+#prompt_dir() {
+#	prompt_segment blue $CURRENT_FG $(basename `pwd`)
+#}
+#
+#prompt_kubecontext() {
+#	prompt_segment red $CURRENT_FG "⎈ `kubectl config current-context`"
+#}
+
+#build_prompt() {
+#	prompt_status
+#	prompt_context
+#	prompt_virtualenv
+#	prompt_dir
+#	prompt_git
+#	prompt_kubecontext
+#	prompt_end
+#}
