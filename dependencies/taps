@@ -1,4 +1,4 @@
 caskroom/cask
 caskroom/fonts
 caskroom/versions
-homebrew/science
+superbrothers/zsh-kubectl-prompt

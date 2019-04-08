@@ -3,4 +3,5 @@ npm-check
 prettier
 snyk
 typescript
+pure-prompt
 spaceship-prompt

@@ -21,3 +21,5 @@ trash
 tree
 wget
 zsh-autosuggestions
+zsh-kubectl-prompt
+zsh-syntax-highlighting
