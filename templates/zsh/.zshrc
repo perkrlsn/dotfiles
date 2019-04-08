@@ -50,11 +50,16 @@ prompt_dir() {
 	prompt_segment blue $CURRENT_FG $(basename `pwd`)
 }
 
+prompt_kubecontext() {
+	prompt_segment red $CURRENT_FG "⎈ `kubectl config current-context`"
+}
+
 build_prompt() {
 	prompt_status
 	prompt_context
 	prompt_virtualenv
 	prompt_dir
 	prompt_git
+	prompt_kubecontext
 	prompt_end
 }
