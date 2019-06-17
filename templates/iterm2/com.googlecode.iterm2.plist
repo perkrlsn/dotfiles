@@ -1040,17 +1040,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>241 249 1406 338 0 0 2560 1417 </string>
+	<string>776 321 1406 204 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>491 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 151 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-2112 326 918 423 -2560 0 2560 1417 </string>
+	<string>3068 591 918 423 2560 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-2560 0 2560 1417 -2560 0 2560 1417 </string>
+	<string>0 24 2560 1393 0 0 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_8E9E1E65-E689-45C1-A29F-24D21CDEE550</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_8E9E1E65-E689-45C1-A29F-24D21CDEE550_selection</key>
@@ -1116,25 +1116,29 @@
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.72806185483932495</real>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.54899996519088745</real>
+				<real>0.84971244679763913</real>
 				<key>Red Component</key>
-				<real>0.18695895373821259</real>
+				<real>0.6528778076171875</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.84295338672902409</real>
+				<real>0.97261847402212542</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.39328910410404205</real>
+				<real>0.60468256333842874</real>
 				<key>Red Component</key>
-				<real>0.872650146484375</real>
+				<real>0.996917724609375</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -1164,12 +1168,16 @@
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.31372549019607843</real>
+				<real>0.5454652282657636</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.69803921568627447</real>
+				<real>0.924652099609375</real>
 				<key>Red Component</key>
-				<real>0.16470588235294117</real>
+				<real>0.31710137845948339</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -1182,25 +1190,29 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.86274509803921573</real>
+				<real>0.996917724609375</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.23529411764705882</real>
+				<real>0.84282199859094931</real>
 				<key>Red Component</key>
-				<real>0.53333333333333333</real>
+				<real>0.37766229780390859</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.94117647058823528</real>
+				<real>0.86801329306513253</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.94117647058823528</real>
+				<real>0.38985193707048893</real>
 				<key>Red Component</key>
-				<real>0.94117647058823528</real>
+				<real>0.9974365234375</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
@@ -1252,12 +1264,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14989741146564484</real>
+				<real>0.256317138671875</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.088618464767932892</real>
+				<real>0.15383486961945891</real>
 				<key>Red Component</key>
-				<real>0.12343064695596695</real>
+				<real>0.21247389393741578</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -1300,7 +1316,7 @@
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
-			<real>0.028915028089887641</real>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1674,6 +1690,8 @@
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
+			<key>Minimum Contrast</key>
+			<real>0.0</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -1683,7 +1701,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 11</string>
+			<string>UbuntuMono-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>

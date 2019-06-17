@@ -1,4 +1,9 @@
 caskroom/cask
 caskroom/fonts
 caskroom/versions
+<<<<<<< Updated upstream
 superbrothers/zsh-kubectl-prompt
+=======
+homebrew/science
+Schniz/tap/fnm
+>>>>>>> Stashed changes

@@ -41,5 +41,13 @@
   {
     "key": "shift+cmd+7",
     "command": "-extension.displayCoverage"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+[Equal]",
+    "command": "-workbench.action.terminal.toggleTerminal"
   }
 ]
