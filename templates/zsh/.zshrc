@@ -49,6 +49,8 @@ autoload -U add-zsh-hook
 	  	elif [[ -f .nvmrc && -r .nvmrc ]]; then
 	    	echo "fnm: Found .nvmrc"
 	      	fnm use
+	    else
+	    	fnm use system --quiet
 	    fi
 	  }
 
