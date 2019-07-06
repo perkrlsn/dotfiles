@@ -4,7 +4,7 @@ export PATH="$(python -m site --user-base)/bin:${PATH}"
 export LANG="en_GB"
 
 ## User
-DEFAULT_USER=`whoami` 
+DEFAULT_USER=`whoami`
 
 ## Theme
 #ZSH_THEME="agnoster"
