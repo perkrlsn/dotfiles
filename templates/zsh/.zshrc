@@ -55,3 +55,5 @@ autoload -U add-zsh-hook
 	  }
 
 add-zsh-hook chpwd _fnm_autoload_hook && _fnm_autoload_hook
+# fnm
+eval "$(fnm env --multi)"
