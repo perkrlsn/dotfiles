@@ -55,5 +55,7 @@ autoload -U add-zsh-hook
 	  }
 
 add-zsh-hook chpwd _fnm_autoload_hook && _fnm_autoload_hook
-# fnm
-eval "$(fnm env --multi)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/perkarlsson/.sdkman"
+[[ -s "/Users/perkarlsson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/perkarlsson/.sdkman/bin/sdkman-init.sh"

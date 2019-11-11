@@ -2,3 +2,5 @@
 .idea
 .envrc
 /user.info
+run_local.sh
+.adr-templates

@@ -6,8 +6,7 @@
   "editor.tabSize": 2,
   "html.format.wrapAttributes": "force",
   "extensions.ignoreRecommendations": true,
-  "workbench.startupEditor": "newUntitledFile",
-
+  "workbench.startupEditor": "readme",
   "workbench.colorTheme": "Mauve",
   "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDragAndDrop": false,
@@ -19,14 +18,13 @@
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
     "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true,
+    "suppressShowKeyBindingsNotice": false,
     "suppressUpdateNotice": false,
     "suppressWelcomeNotice": true
   },
   "files.trimTrailingWhitespace": true,
   "gitlens.keymap": "none",
   "gitlens.codeLens.enabled": false,
-  // Extensions
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -44,7 +42,6 @@
   "workbench.fontAliasing": "antialiased",
   "editor.fontWeight": "bold",
   "togglequotes.chars": ["\"", "'", "`"],
-  "reactPureToClass.typescript": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "workbench.editor.highlightModifiedTabs": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -56,7 +53,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.statusBar.feedback.visible": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -71,6 +67,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
+    "javascript.validate.enable": false,
+    "adr.templates.directory": ".adr-templates",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "gitlens.mode.active": "review"
+  },
+  "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
