@@ -1,6 +1,6 @@
 ## ZSH Init
 export ZSH=$HOME/.oh-my-zsh
-export PATH="$(python -m site --user-base)/bin:${PATH}"
+export PATH="$(python -m site --user-base)/bin:${PATH}:node_modules/.bin"
 export LANG="en_GB"
 
 ## User
