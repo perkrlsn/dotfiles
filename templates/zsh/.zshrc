@@ -6,9 +6,6 @@ export LANG="en_GB"
 ## User
 DEFAULT_USER=`whoami`
 
-## Theme
-#ZSH_THEME="agnoster"
-
 ## Plugins
 plugins=(git node )
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -38,7 +35,7 @@ prompt pure
 RPROMPT='%{$fg[yellow]%}$ZSH_KUBECTL_PROMPT%{$reset_color%}'
 
 #FNM
-eval "$(fnm env --multi)"
+eval "`fnm env --multi`"
 
 #FNM autoload
 autoload -U add-zsh-hook
@@ -46,11 +43,14 @@ autoload -U add-zsh-hook
 	  	if [[ -f .node-version && -r .node-version ]]; then
 	    	echo "fnm: Found .node-version"
 	    	fnm use
+	    	rehash
 	  	elif [[ -f .nvmrc && -r .nvmrc ]]; then
 	    	echo "fnm: Found .nvmrc"
 	      	fnm use
+	      	rehash
 	    else
 	    	fnm use system --quiet
+	    	rehash
 	    fi
 	  }
 
