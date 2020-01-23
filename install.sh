@@ -105,7 +105,7 @@ backup_file () {
 }
 
 install_oh_my_zsh () {
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }
 
 if [ ! -f "$user_info" ]; then get_user_info; fi
@@ -150,5 +150,4 @@ source provisioning/mac/macos.sh
 
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
-
 
