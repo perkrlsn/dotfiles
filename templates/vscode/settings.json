@@ -7,7 +7,7 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.editor.highlightModifiedTabs": false,
   "editor.fontFamily": "'Fira Code', Menlo",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.fontWeight": "bold",
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
@@ -36,7 +36,6 @@
   "gitlens.keymap": "none",
   "gitlens.codeLens.enabled": false,
   "search.actionsPosition": "right",
-  "search.location": "panel",
   "javascript.validate.enable": false,
   "javascript.implicitProjectConfig.checkJs": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -140,5 +139,7 @@
     }
   ],
   "workbench.iconTheme": "material-icon-theme",
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmDelete": false,
+  "synthwave84.brightness": "0.2",
 }

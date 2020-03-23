@@ -12,6 +12,7 @@ grep
 hub
 jq
 mas
+meltwater/fks/kubectl
 mongodb
 nano
 node
