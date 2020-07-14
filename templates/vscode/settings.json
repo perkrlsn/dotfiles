@@ -1,6 +1,5 @@
 {
   "breadcrumbs.enabled": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.detectIndentation": false,
   "editor.fontFamily": "'Fira Code', Menlo",
   "editor.fontLigatures": false,
@@ -54,8 +53,20 @@
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   },
   "window.zoomLevel": 0,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.exclude": {
+    "**/node_modules": true
+  },
 }
