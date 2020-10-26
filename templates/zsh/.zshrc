@@ -49,7 +49,7 @@ autoload -U add-zsh-hook
 	      	fnm use
 	      	rehash
 	    else
-	    	fnm use default
+	    	fnm --log-level quiet use default
 	    	rehash
 	    fi
 	  }
