@@ -35,7 +35,7 @@ prompt pure
 RPROMPT='%{$fg[yellow]%}$ZSH_KUBECTL_PROMPT%{$reset_color%}'
 
 #FNM
-eval "`fnm env --multi`"
+eval "`fnm env`"
 
 #FNM autoload
 autoload -U add-zsh-hook
@@ -49,7 +49,7 @@ autoload -U add-zsh-hook
 	      	fnm use
 	      	rehash
 	    else
-	    	fnm use default --quiet
+	    	fnm use default
 	    	rehash
 	    fi
 	  }

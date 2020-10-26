@@ -1614,7 +1614,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>586 548 620 392 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 443 1792 654 0 0 1792 1097 </string>
+	<string>0 71 1792 1026 0 0 1792 1097 </string>
 	<key>NeverWarnAboutShortLivedSessions_8E9E1E65-E689-45C1-A29F-24D21CDEE550</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_8E9E1E65-E689-45C1-A29F-24D21CDEE550_selection</key>
@@ -4367,6 +4367,7 @@
 		<string>3.3.8</string>
 		<string>3.3.11</string>
 		<string>3.3.7</string>
+		<string>3.3.12</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -4387,7 +4388,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>603013664.56546605</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>157</integer>
+	<integer>186</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>601827001.60418403</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -5156,6 +5157,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>~/dotfiles/templates/iterm2</string>
+	<key>PreventEscapeSequenceFromChangingProfile</key>
+	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -5171,17 +5174,17 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-03T07:00:10Z</date>
+	<date>2020-09-28T07:01:40Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>1675015019</integer>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -5215,7 +5218,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.11</string>
+	<string>3.3.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
