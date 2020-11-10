@@ -49,13 +49,9 @@ autoload -U add-zsh-hook
 	      	fnm use
 	      	rehash
 	    else
-	    	fnm --log-level quiet use default
+	    	fnm --log-level quiet use system
 	    	rehash
 	    fi
 	  }
 
 add-zsh-hook chpwd _fnm_autoload_hook && _fnm_autoload_hook
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/perkarlsson/.sdkman"
-[[ -s "/Users/perkarlsson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/perkarlsson/.sdkman/bin/sdkman-init.sh"
